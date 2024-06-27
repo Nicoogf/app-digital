@@ -1,8 +1,7 @@
-export default function Home() {
+export default function LoguinPage() {
   return (
     <main className="">
       <h1>Inicio de App</h1>
-      <a href={ `${forgetURL} `}> Cambiar contraseña </a>
     </main>
   );
 }
