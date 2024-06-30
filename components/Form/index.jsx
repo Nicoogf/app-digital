@@ -1,6 +1,8 @@
 "use client"
 import React, { createContext, useState } from 'react'
 import styles from "./style.module.scss"
+import { Input } from './Components/Input'
+import Footer from './Components/Footer'
 
 export const FormContext = createContext()
 
@@ -25,3 +27,4 @@ export function Form({title,children,onSumbit,description}){
 }
 
 Form.input = Input
+Form.Footer = Footer
