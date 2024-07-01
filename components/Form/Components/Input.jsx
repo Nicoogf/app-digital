@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import { FormContext } from ".."
 import styles from "./style.module.scss"
 
-export function Input({ label, name, placeholder = "", type = "text" }) {
+
+const Input = ({ label, name, placeholder = "", type = "text" }) => {
     const { formValue = {}, setFormValues } = useContext(FormContext)
 
     const handleChange = ({ target: { value } }) => {
@@ -22,20 +23,22 @@ export function Input({ label, name, placeholder = "", type = "text" }) {
 
     return (
         <div className={styles.inputContainer}>
-            <label className={styles.label} htmlFor={name}> 
-                { label } 
+            <label className={styles.label} htmlFor={name}>
+                {label}
             </label>
-            <input 
-                type={type} 
-                id={name} 
-                name={name} 
-                value={formValue[name] || ''} 
-                onChange={handleChange} 
-                placeholder={placeholder} 
-            /> 
+            <input
+                type={type}
+                id={name}
+                name={name}
+                value={formValue[name] || ''}
+                onChange={handleChange}
+                placeholder={placeholder}
+            />
         </div>
     )
 }
+
+export default Input
 
 Input.propTypes = {
     label: PropTypes.string.isRequired,
