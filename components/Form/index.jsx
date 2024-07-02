@@ -1,7 +1,7 @@
 "use client"
 import React, { createContext, useState } from 'react'
 import styles from "./style.module.scss"
-import { Footer,Input,SubmitButton} from "./Components"
+import { Footer,Input,SubmitButton} from "./components"
 
 
 export const FormContext = createContext()
@@ -28,4 +28,4 @@ export function Form({title,children,onSumbit,description}){
 
 Form.Input= Input
 Form.Footer = Footer
-Form.Submit = SubmitButton
+Form.SubmitButton = SubmitButton

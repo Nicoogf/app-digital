@@ -26,20 +26,20 @@
 .submitButton {
     margin-top: 1rem;
     width: 100%;
-    background:black;
-    color:white;
+    background: black;
+    color: white;
     text-align: center;
     border-radius: 6px;
-    padding: .4rem 0;
-    border: 1px solid transparent ;
-    transition-duration: .3s;
+    padding: 0.4rem 0;
+    border: 1px solid transparent;
+    transition-duration: 0.3s;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 
-    &:hover{
+    &:hover {
         background-color: white;
-        color:black;
-        border:1px solid black
+        color: black;
+        border: 1px solid black;
     }
 }
